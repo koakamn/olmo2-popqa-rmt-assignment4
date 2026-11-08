@@ -1,0 +1,32 @@
+{
+ "n": 3003,
+ "accuracy": 0.07292707292707293,
+ "by_tertile": {
+  "medium": 0.0828,
+  "popular": 0.0638,
+  "rare": 0.0721
+ },
+ "substring_acc": 0.07725607725607726,
+ "boundary_acc": 0.07292707292707293,
+ "substring_only_hits": 13,
+ "share_questions_with_alias_le3_chars": 0.13243129556926528,
+ "gold_objects_triggering_abstain_lexicon": 0
+}
+          prop     n    acc
+         sport 117.0 0.6752
+         color   6.0 0.6667
+      religion  68.0 0.4265
+       country 179.0 0.2905
+    occupation 114.0 0.2807
+         genre 342.0 0.0322
+place of birth 126.0 0.0159
+      producer 316.0 0.0127
+        author 320.0 0.0094
+      composer 207.0 0.0048
+  screenwriter 416.0 0.0024
+      director 422.0 0.0024
+        father 117.0 0.0000
+    capital of  78.0 0.0000
+       capital 134.0 0.0000
+        mother  41.0 0.0000
+modes: {'author': 'Isaac Asimov', 'capital': 'Richmond', 'capital of': 'Union between Sweden and Norway', 'color': 'red', 'composer': 'Maurice Jarre', 'country': 'United States of America', 'director': 'Michael Winterbottom', 'father': 'Edward I of England', 'genre': 'rock music', 'mother': 'Styx', 'occupation': 'politician', 'place of birth': 'Paris', 'producer': 'Andy Warhol', 'religion': 'Catholic Church', 'screenwriter': 'Brad Falchuk', 'sport': 'association football'}

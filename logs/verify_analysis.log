@@ -1,0 +1,4 @@
+injected +150 gains (+4.99 pp): diff=0.0500  CI=[0.0422,0.0579]  gained=150 lost=0  p=1.40e-45
+symmetric swap 60/60 (0 pp)   : diff=0.0000  CI=[-0.0076,0.0070]  gained=60 lost=60  p=1.000  within +-3pp margin: True
+popularity logit fitted, n_obs = 9009 | converged: True
+ALL ANALYSIS CHECKS PASSED

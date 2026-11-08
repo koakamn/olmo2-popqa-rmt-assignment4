@@ -1,0 +1,15 @@
+{
+  "data/processed/popqa_clean.jsonl": "278365f43427001bcc5412fdf4b43aaae1c4e776c3fce85c5aeffd46f5bb43f7",
+  "data/processed/dev.jsonl": "42ca175ddc13d1af8f302ef0d73d90587c185ebd5b4a2aec87f051c58ebd6aa3",
+  "data/processed/test_sample.jsonl": "9c664749744d799891b9c0b56b5d3dc7417d1e198540b4f2e0e57fa4dc71e1a1",
+  "results/preds_prior_baseline.jsonl": "09498a40d017e5640ca731fe2fd03d2c0522a90c8f002e6d64fee502da6605af",
+  "results/preds_base.jsonl": "0916cd73a44df5bedd06837dce64d0d4e5c4512644572c0ae1fb62f567e7ed53",
+  "results/preds_sft.jsonl": "3093faf328b6507f1d347c0ecc5dc67c1eadf5dac287332374fcab41a2e8b353",
+  "results/preds_dpo.jsonl": "96d8cd727041c5ed29f43465e3cb94a91e30bb55ed4f8142d5299a992037b70c",
+  "results/preds_instruct.jsonl": "22434884a8db2bba66698c1642e2245d6571038927767df65c8f512a4f47ebc1",
+  "raw_results/preds_prior_baseline.jsonl": "09498a40d017e5640ca731fe2fd03d2c0522a90c8f002e6d64fee502da6605af",
+  "raw_results/preds_base.jsonl": "0916cd73a44df5bedd06837dce64d0d4e5c4512644572c0ae1fb62f567e7ed53",
+  "raw_results/preds_sft.jsonl": "3093faf328b6507f1d347c0ecc5dc67c1eadf5dac287332374fcab41a2e8b353",
+  "raw_results/preds_dpo.jsonl": "96d8cd727041c5ed29f43465e3cb94a91e30bb55ed4f8142d5299a992037b70c",
+  "raw_results/preds_instruct.jsonl": "22434884a8db2bba66698c1642e2245d6571038927767df65c8f512a4f47ebc1"
+}

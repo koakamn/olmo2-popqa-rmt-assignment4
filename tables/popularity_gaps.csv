@@ -1,0 +1,6 @@
+condition,rare_acc_pct,popular_acc_pct,gap_unrounded_pp,gap_from_rounded_table_pp,ci95_cluster_lo,ci95_cluster_hi
+prior_baseline,7.21,6.38,-0.83,-0.83,-3.01,1.41
+base,6.91,25.71,18.8,18.8,15.55,22.05
+sft,5.73,16.7,10.97,10.97,8.07,13.82
+dpo,5.82,20.55,14.72,14.73,11.71,17.73
+instruct,6.22,19.84,13.62,13.62,10.56,16.63

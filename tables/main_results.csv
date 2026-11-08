@@ -1,0 +1,6 @@
+condition,display_name,n,correct_n,accuracy_pct,ci95_cluster_lo,ci95_cluster_hi,ci95_wilson_lo,ci95_wilson_hi,incorrect_n,error_rate_pct,abstain_n,abstention_rate_pct,coverage_pct,selective_accuracy_pct
+prior_baseline,Relation prior,3003,219,7.29,6.38,8.24,6.42,8.28,2784,92.71,0,0.0,100.0,7.29
+base,Base,3003,430,14.32,13.05,15.66,13.11,15.62,1832,61.01,741,24.68,75.32,19.01
+sft,SFT,3003,294,9.79,8.7,10.93,8.78,10.91,689,22.94,2020,67.27,32.73,29.91
+dpo,DPO,3003,343,11.42,10.25,12.64,10.33,12.61,1670,55.61,990,32.97,67.03,17.04
+instruct,Instruct,3003,344,11.46,10.28,12.68,10.37,12.64,1326,44.16,1333,44.39,55.61,20.6

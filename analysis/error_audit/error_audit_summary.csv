@@ -1,0 +1,7 @@
+category,definition_and_cause,count,pct_of_32
+Different named person,The requested person is replaced by a different name absent from the supplied gold aliases. Incorrect entity association or title ambiguity.,18,56.25
+Different occupation or genre,The predicted occupation or genre differs from the benchmark attribute rather than being a broader version of it.,4,12.5
+Different location or administrative relation,The response supplies a different country or administrative level inconsistent with the benchmark answer.,2,6.25
+Broader attribute than gold,The output is a broader category related to a supplied gold alias but lacks the benchmark's specificity.,4,12.5
+Potential lexical or short-form mismatch,A shortened or closely related lexical form is absent from the supplied alias list.,3,9.38
+Possible alternate occupation,The response gives a real-world occupation of a multi-occupation entity that is absent from the Wikidata-derived gold alias list.,1,3.12

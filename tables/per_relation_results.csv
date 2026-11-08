@@ -1,0 +1,81 @@
+condition,relation,n,correct_n,accuracy_pct,incorrect_n,error_rate_pct,abstain_n,abstention_rate_pct
+prior_baseline,author,320,3,0.94,317,99.06,0,0.0
+prior_baseline,capital,134,0,0.0,134,100.0,0,0.0
+prior_baseline,capital of,78,0,0.0,78,100.0,0,0.0
+prior_baseline,color,6,4,66.67,2,33.33,0,0.0
+prior_baseline,composer,207,1,0.48,206,99.52,0,0.0
+prior_baseline,country,179,52,29.05,127,70.95,0,0.0
+prior_baseline,director,422,1,0.24,421,99.76,0,0.0
+prior_baseline,father,117,0,0.0,117,100.0,0,0.0
+prior_baseline,genre,342,11,3.22,331,96.78,0,0.0
+prior_baseline,mother,41,0,0.0,41,100.0,0,0.0
+prior_baseline,occupation,114,32,28.07,82,71.93,0,0.0
+prior_baseline,place of birth,126,2,1.59,124,98.41,0,0.0
+prior_baseline,producer,316,4,1.27,312,98.73,0,0.0
+prior_baseline,religion,68,29,42.65,39,57.35,0,0.0
+prior_baseline,screenwriter,416,1,0.24,415,99.76,0,0.0
+prior_baseline,sport,117,79,67.52,38,32.48,0,0.0
+base,author,320,33,10.31,186,58.12,101,31.56
+base,capital,134,86,64.18,45,33.58,3,2.24
+base,capital of,78,28,35.9,48,61.54,2,2.56
+base,color,6,6,100.0,0,0.0,0,0.0
+base,composer,207,10,4.83,171,82.61,26,12.56
+base,country,179,110,61.45,61,34.08,8,4.47
+base,director,422,24,5.69,393,93.13,5,1.18
+base,father,117,20,17.09,66,56.41,31,26.5
+base,genre,342,17,4.97,135,39.47,190,55.56
+base,mother,41,5,12.2,22,53.66,14,34.15
+base,occupation,114,11,9.65,17,14.91,86,75.44
+base,place of birth,126,15,11.9,79,62.7,32,25.4
+base,producer,316,18,5.7,223,70.57,75,23.73
+base,religion,68,5,7.35,49,72.06,14,20.59
+base,screenwriter,416,27,6.49,335,80.53,54,12.98
+base,sport,117,15,12.82,2,1.71,100,85.47
+sft,author,320,19,5.94,127,39.69,174,54.38
+sft,capital,134,77,57.46,41,30.6,16,11.94
+sft,capital of,78,29,37.18,38,48.72,11,14.1
+sft,color,6,6,100.0,0,0.0,0,0.0
+sft,composer,207,8,3.86,68,32.85,131,63.29
+sft,country,179,85,47.49,54,30.17,40,22.35
+sft,director,422,8,1.9,66,15.64,348,82.46
+sft,father,117,6,5.13,19,16.24,92,78.63
+sft,genre,342,23,6.73,128,37.43,191,55.85
+sft,mother,41,4,9.76,16,39.02,21,51.22
+sft,occupation,114,1,0.88,2,1.75,111,97.37
+sft,place of birth,126,12,9.52,48,38.1,66,52.38
+sft,producer,316,1,0.32,38,12.03,277,87.66
+sft,religion,68,4,5.88,9,13.24,55,80.88
+sft,screenwriter,416,8,1.92,35,8.41,373,89.66
+sft,sport,117,3,2.56,0,0.0,114,97.44
+dpo,author,320,21,6.56,249,77.81,50,15.62
+dpo,capital,134,76,56.72,50,37.31,8,5.97
+dpo,capital of,78,29,37.18,39,50.0,10,12.82
+dpo,color,6,5,83.33,1,16.67,0,0.0
+dpo,composer,207,6,2.9,142,68.6,59,28.5
+dpo,country,179,87,48.6,68,37.99,24,13.41
+dpo,director,422,12,2.84,294,69.67,116,27.49
+dpo,father,117,11,9.4,48,41.03,58,49.57
+dpo,genre,342,31,9.06,243,71.05,68,19.88
+dpo,mother,41,5,12.2,23,56.1,13,31.71
+dpo,occupation,114,7,6.14,10,8.77,97,85.09
+dpo,place of birth,126,11,8.73,58,46.03,57,45.24
+dpo,producer,316,5,1.58,152,48.1,159,50.32
+dpo,religion,68,6,8.82,30,44.12,32,47.06
+dpo,screenwriter,416,11,2.64,262,62.98,143,34.38
+dpo,sport,117,20,17.09,1,0.85,96,82.05
+instruct,author,320,20,6.25,207,64.69,93,29.06
+instruct,capital,134,82,61.19,38,28.36,14,10.45
+instruct,capital of,78,27,34.62,40,51.28,11,14.1
+instruct,color,6,5,83.33,1,16.67,0,0.0
+instruct,composer,207,5,2.42,108,52.17,94,45.41
+instruct,country,179,89,49.72,61,34.08,29,16.2
+instruct,director,422,11,2.61,178,42.18,233,55.21
+instruct,father,117,10,8.55,54,46.15,53,45.3
+instruct,genre,342,28,8.19,283,82.75,31,9.06
+instruct,mother,41,5,12.2,22,53.66,14,34.15
+instruct,occupation,114,7,6.14,10,8.77,97,85.09
+instruct,place of birth,126,12,9.52,60,47.62,54,42.86
+instruct,producer,316,5,1.58,104,32.91,207,65.51
+instruct,religion,68,6,8.82,36,52.94,26,38.24
+instruct,screenwriter,416,13,3.12,122,29.33,281,67.55
+instruct,sport,117,19,16.24,2,1.71,96,82.05

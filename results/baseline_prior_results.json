@@ -1,0 +1,96 @@
+{
+ "n": 3003,
+ "accuracy": 0.07292707292707293,
+ "by_tertile": {
+  "medium": 0.0828,
+  "popular": 0.0638,
+  "rare": 0.0721
+ },
+ "by_relation": [
+  {
+   "prop": "sport",
+   "n": 117.0,
+   "acc": 0.6752
+  },
+  {
+   "prop": "color",
+   "n": 6.0,
+   "acc": 0.6667
+  },
+  {
+   "prop": "religion",
+   "n": 68.0,
+   "acc": 0.4265
+  },
+  {
+   "prop": "country",
+   "n": 179.0,
+   "acc": 0.2905
+  },
+  {
+   "prop": "occupation",
+   "n": 114.0,
+   "acc": 0.2807
+  },
+  {
+   "prop": "genre",
+   "n": 342.0,
+   "acc": 0.0322
+  },
+  {
+   "prop": "place of birth",
+   "n": 126.0,
+   "acc": 0.0159
+  },
+  {
+   "prop": "producer",
+   "n": 316.0,
+   "acc": 0.0127
+  },
+  {
+   "prop": "author",
+   "n": 320.0,
+   "acc": 0.0094
+  },
+  {
+   "prop": "composer",
+   "n": 207.0,
+   "acc": 0.0048
+  },
+  {
+   "prop": "screenwriter",
+   "n": 416.0,
+   "acc": 0.0024
+  },
+  {
+   "prop": "director",
+   "n": 422.0,
+   "acc": 0.0024
+  },
+  {
+   "prop": "father",
+   "n": 117.0,
+   "acc": 0.0
+  },
+  {
+   "prop": "capital of",
+   "n": 78.0,
+   "acc": 0.0
+  },
+  {
+   "prop": "capital",
+   "n": 134.0,
+   "acc": 0.0
+  },
+  {
+   "prop": "mother",
+   "n": 41.0,
+   "acc": 0.0
+  }
+ ],
+ "substring_acc": 0.07725607725607726,
+ "boundary_acc": 0.07292707292707293,
+ "substring_only_hits": 13,
+ "share_questions_with_alias_le3_chars": 0.13243129556926528,
+ "gold_objects_triggering_abstain_lexicon": 0
+}

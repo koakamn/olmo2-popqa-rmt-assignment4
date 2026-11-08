@@ -1,0 +1,6 @@
+condition,whole_phrase_n,whole_phrase_acc_pct,exact_match_n,exact_match_acc_pct,substring_n,substring_acc_pct
+prior_baseline,219,7.29,215,7.16,232,7.73
+base,430,14.32,427,14.22,434,14.45
+sft,294,9.79,289,9.62,296,9.86
+dpo,343,11.42,336,11.19,347,11.56
+instruct,344,11.46,340,11.32,349,11.62

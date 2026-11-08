@@ -1,0 +1,138 @@
+{
+  "status": "ALL_CHECKS_PASSED",
+  "summary": {
+    "timestamp_utc": "2026-11-08T12:12:24Z",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python_version": "3.13.12",
+    "packages": {
+      "numpy": "2.5.3",
+      "pandas": "3.0.6",
+      "matplotlib": "3.11.2"
+    },
+    "dataset": {
+      "raw_rows": 14267,
+      "clean_rows": 14264,
+      "dev_rows": 2891,
+      "test_rows": 3003,
+      "unique_test_subjects": 2855,
+      "test_sha256": "9c664749744d799891b9c0b56b5d3dc7417d1e198540b4f2e0e57fa4dc71e1a1"
+    },
+    "rescored_predictions_verified": 15015,
+    "bootstrap_replicates": 10000,
+    "seed": 42,
+    "total_replay_seconds": 7.3628,
+    "main_results": [
+      {
+        "condition": "prior_baseline",
+        "display_name": "Relation prior",
+        "n": 3003,
+        "correct_n": 219,
+        "accuracy_pct": 7.29,
+        "ci95_cluster_lo": 6.38,
+        "ci95_cluster_hi": 8.24,
+        "ci95_wilson_lo": 6.42,
+        "ci95_wilson_hi": 8.28,
+        "incorrect_n": 2784,
+        "error_rate_pct": 92.71,
+        "abstain_n": 0,
+        "abstention_rate_pct": 0.0,
+        "coverage_pct": 100.0,
+        "selective_accuracy_pct": 7.29
+      },
+      {
+        "condition": "base",
+        "display_name": "Base",
+        "n": 3003,
+        "correct_n": 430,
+        "accuracy_pct": 14.32,
+        "ci95_cluster_lo": 13.05,
+        "ci95_cluster_hi": 15.66,
+        "ci95_wilson_lo": 13.11,
+        "ci95_wilson_hi": 15.62,
+        "incorrect_n": 1832,
+        "error_rate_pct": 61.01,
+        "abstain_n": 741,
+        "abstention_rate_pct": 24.68,
+        "coverage_pct": 75.32,
+        "selective_accuracy_pct": 19.01
+      },
+      {
+        "condition": "sft",
+        "display_name": "SFT",
+        "n": 3003,
+        "correct_n": 294,
+        "accuracy_pct": 9.79,
+        "ci95_cluster_lo": 8.7,
+        "ci95_cluster_hi": 10.93,
+        "ci95_wilson_lo": 8.78,
+        "ci95_wilson_hi": 10.91,
+        "incorrect_n": 689,
+        "error_rate_pct": 22.94,
+        "abstain_n": 2020,
+        "abstention_rate_pct": 67.27,
+        "coverage_pct": 32.73,
+        "selective_accuracy_pct": 29.91
+      },
+      {
+        "condition": "dpo",
+        "display_name": "DPO",
+        "n": 3003,
+        "correct_n": 343,
+        "accuracy_pct": 11.42,
+        "ci95_cluster_lo": 10.25,
+        "ci95_cluster_hi": 12.64,
+        "ci95_wilson_lo": 10.33,
+        "ci95_wilson_hi": 12.61,
+        "incorrect_n": 1670,
+        "error_rate_pct": 55.61,
+        "abstain_n": 990,
+        "abstention_rate_pct": 32.97,
+        "coverage_pct": 67.03,
+        "selective_accuracy_pct": 17.04
+      },
+      {
+        "condition": "instruct",
+        "display_name": "Instruct",
+        "n": 3003,
+        "correct_n": 344,
+        "accuracy_pct": 11.46,
+        "ci95_cluster_lo": 10.28,
+        "ci95_cluster_hi": 12.68,
+        "ci95_wilson_lo": 10.37,
+        "ci95_wilson_hi": 12.64,
+        "incorrect_n": 1326,
+        "error_rate_pct": 44.16,
+        "abstain_n": 1333,
+        "abstention_rate_pct": 44.39,
+        "coverage_pct": 55.61,
+        "selective_accuracy_pct": 20.6
+      }
+    ]
+  },
+  "runtime_profile": [
+    {
+      "step": "Hash & integrity verification (13 files)",
+      "seconds": 0.1238
+    },
+    {
+      "step": "Load data & rescore all 15,015 predictions",
+      "seconds": 0.5642
+    },
+    {
+      "step": "Subject-cluster bootstrap (B=10000, 2,855 clusters)",
+      "seconds": 1.223
+    },
+    {
+      "step": "Clustered logistic regression (12,012 observations)",
+      "seconds": 0.1469
+    },
+    {
+      "step": "Generate Figures 1-3 (matplotlib)",
+      "seconds": 1.4043
+    },
+    {
+      "step": "Total end-to-end statistical replay",
+      "seconds": 7.3628
+    }
+  ]
+}

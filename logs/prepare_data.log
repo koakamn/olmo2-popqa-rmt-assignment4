@@ -1,0 +1,40 @@
+{
+  "raw_rows": 14267,
+  "after_cleaning": 14264,
+  "dropped": 3,
+  "n_subjects": 12241,
+  "n_relations": 16,
+  "dev_rows": 2891,
+  "test_rows": 11373,
+  "test_sample_rows": 3003,
+  "test_sample_by_tertile": {
+    "rare": 1013,
+    "medium": 1002,
+    "popular": 988
+  },
+  "test_sample_by_relation": {
+    "director": 422,
+    "screenwriter": 416,
+    "genre": 342,
+    "author": 320,
+    "producer": 316,
+    "composer": 207,
+    "country": 179,
+    "capital": 134,
+    "place of birth": 126,
+    "father": 117,
+    "sport": 117,
+    "occupation": 114,
+    "capital of": 78,
+    "religion": 68,
+    "mother": 41,
+    "color": 6
+  },
+  "median_s_pop_by_tertile_in_sample": {
+    "medium": 1081.5,
+    "popular": 10365.0,
+    "rare": 176.0
+  },
+  "sha256_raw": "9a5227f41bff0e4c331d4a774d946b12f95307892b58f860a9606ef356e6089b",
+  "seed": 42
+}

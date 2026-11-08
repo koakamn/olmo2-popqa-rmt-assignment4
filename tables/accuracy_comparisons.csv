@@ -1,0 +1,11 @@
+earlier,later,comparison,gains,losses,net_items,delta_pp,ci95_lo,ci95_hi,p_mcnemar_raw,p_holm_10,within_h1_3pp_margin
+prior_baseline,base,Relation prior -> Base,387,176,211,7.03,5.46,8.62,3.329800865859085e-19,2.9968207792731764e-18,False
+prior_baseline,sft,Relation prior -> SFT,273,198,75,2.5,1.06,4.0,0.0006349969693999755,0.001269993938799951,False
+prior_baseline,dpo,Relation prior -> DPO,307,183,124,4.13,2.67,5.63,2.3306959202007993e-08,1.1259897956967085e-07,False
+prior_baseline,instruct,Relation prior -> Instruct,305,180,125,4.16,2.71,5.65,1.5051191250651136e-08,9.030714750390682e-08,False
+base,sft,Base -> SFT,38,174,-136,-4.53,-5.52,-3.58,5.4541882582643195e-22,5.454188258264319e-21,False
+base,dpo,Base -> DPO,69,156,-87,-2.9,-3.92,-1.91,6.441498819843237e-09,5.15319905587459e-08,False
+base,instruct,Base -> Instruct,68,154,-86,-2.86,-3.87,-1.86,7.638459201593285e-09,5.346921441115299e-08,False
+sft,dpo,SFT -> DPO,68,19,49,1.63,1.04,2.26,1.2351631890150023e-07,3.705489567045007e-07,True
+sft,instruct,SFT -> Instruct,66,16,50,1.67,1.07,2.27,2.251979591393417e-08,1.1259897956967085e-07,True
+dpo,instruct,DPO -> Instruct,25,24,1,0.03,-0.43,0.5,1.0,1.0,True

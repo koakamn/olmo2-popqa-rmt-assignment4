@@ -1,0 +1,73 @@
+audit_id,condition,item_id,relation,pop_tertile,question,gold_example,all_gold_aliases,saved_answer,raw_output,taxonomy_category,short_category,rationale
+1,base,1223902,occupation,rare,What is Herlyn Espinal's occupation?,journalist,"[""journalist"", ""journo"", ""journalists""]",Actor, Actor,Different occupation or genre,Different attribute,Predicts 'Actor' instead of 'journalist' for Herlyn Espinal; wrong occupation association.
+2,base,3436182,father,rare,Who is the father of Ballal Sena?,Vijay Sena,"[""Vijay Sena""]",Raja Sena, Raja Sena,Different named person,Different person,Predicts 'Raja Sena' instead of 'Vijay Sena' as father of Ballal Sena; dynasty entity confusion.
+3,base,4682521,producer,medium,Who was the producer of Leader?,Sashadhar Mukherjee,"[""Sashadhar Mukherjee""]",Ian Anderson, Ian Anderson,Different named person,Different person,Predicts 'Ian Anderson' instead of 'Sashadhar Mukherjee' for Leader; title ambiguity across works named 'Leader'.
+4,base,5453507,director,medium,Who was the director of Pilot?,Gene Reynolds,"[""Gene Reynolds""]",David Winning, David Winning,Different named person,Different person,Predicts 'David Winning' instead of 'Gene Reynolds' for 'Pilot'; extreme title ambiguity ('Pilot' episode).
+5,base,5921512,screenwriter,medium,Who was the screenwriter for The Detail?,Ed Burns,"[""Ed Burns"", ""David Simon"", ""David Judah Simon""]",John Hodge, John Hodge,Different named person,Different person,Predicts 'John Hodge' instead of 'Ed Burns' / 'David Simon' for The Detail.
+6,base,2775591,screenwriter,popular,Who was the screenwriter for Max Dugan Returns?,Neil Simon,"[""Neil Simon"", ""Marvin Neil Simon""]",Robert Avsec, Robert Avsec,Different named person,Different person,Predicts 'Robert Avsec' instead of 'Neil Simon' for Max Dugan Returns.
+7,base,1635529,religion,popular,What is the religion of Bourbon Restoration?,Catholic Church,"[""Catholic Church"", ""Roman Catholic Church"", ""Church"", ""Roman Apostolic Catholic Church""]",Catholic, Catholic,Potential lexical or short-form mismatch,Possible lexical mismatch,Predicts 'Catholic' whereas gold aliases list 'Catholic Church' / 'Catholicism'; adjectival short form.
+8,base,2057677,capital,rare,What is the capital of Gmina Babice?,"Babice, Chrzanów County","[""Babice, Chrzanów County""]",Babice, Babice,Potential lexical or short-form mismatch,Possible lexical mismatch,"Predicts 'Babice' whereas gold requires disambiguated 'Babice, Chrzanów County'."
+9,sft,1094065,occupation,popular,What is Jilly Cooper's occupation?,journalist,"[""journalist"", ""journo"", ""journalists"", ""novelist""]",Author," Author
+
+",Broader attribute than gold,Broader attribute,"Predicts 'Author' for Jilly Cooper whereas gold lists 'journalist', 'writer', 'novelist'; near-synonym omitted from alias set."
+10,sft,5919221,genre,medium,What genre is The Court?,legal drama,"[""legal drama"", ""courtroom drama""]",Drama," Drama
+
+",Broader attribute than gold,Broader attribute,Predicts coarse genre 'Drama' instead of specific 'legal drama' for The Court.
+11,sft,2977722,country,medium,In what country is Khabb wa ash Sha'af District?,Yemen,"[""Yemen"", ""Republic of Yemen"", ""ye"", ""Rep. Yemen"", ""🇾🇪"", ""YEM""]",Jordan, Jordan,Different location or administrative relation,Geographic mismatch,Predicts 'Jordan' instead of 'Yemen' for Khabb wa ash Sha'af District.
+12,sft,778850,director,popular,Who was the director of The Hours?,Stephen Daldry,"[""Stephen Daldry"", ""Stephen David Daldry""]",Michael Almereyda," Michael Almereyda
+
+",Different named person,Different person,Predicts 'Michael Almereyda' instead of 'Stephen Daldry' as director of The Hours.
+13,sft,5760432,screenwriter,rare,Who was the screenwriter for Partner?,Bernardo Bertolucci,"[""Bernardo Bertolucci""]",Nikhil Advani, Nikhil Advani,Different named person,Different person,Predicts 'Nikhil Advani' instead of 'Bernardo Bertolucci' for Partner; cross-film title ambiguity.
+14,sft,2886500,composer,rare,Who was the composer of Nerone?,Arturo Toscanini,"[""Arturo Toscanini"", ""Arrigo Boito"", ""Tobia Gorrio"", ""Arrigo Enrico Boito"", ""Enrico Giuseppe Giovanni Boito"", ""Vincenzo Tommasini""]",Wolfgang Amadeus Mozart, Wolfgang Amadeus Mozart,Different named person,Different person,Predicts 'Wolfgang Amadeus Mozart' instead of 'Arturo Toscanini' / 'Arrigo Boito' for Nerone.
+15,sft,5951965,author,popular,Who is the author of The Rise and Fall of Little Voice?,Jim Cartwright,"[""Jim Cartwright""]",Sue Townsend, Sue Townsend,Different named person,Different person,Predicts 'Sue Townsend' instead of 'Jim Cartwright' for The Rise and Fall of Little Voice.
+16,sft,1762839,occupation,popular,What is Donald Trump's occupation?,actor,"[""actor"", ""actress"", ""actors"", ""actresses"", ""socialite"", ""prominent person"", ""real estate development"", ""property development"", ""Real estate development"", ""politician"", ""political leader"", ""political figure"", ""polit."", ""pol"", ""business magnate"", ""businessperson"", ""tycoon"", ""magnate""]",businessman," businessman
+
+",Potential lexical or short-form mismatch,Possible lexical mismatch,"Predicts 'businessman' whereas gold aliases include 'businessperson', 'entrepreneur', 'politician'."
+17,dpo,2360504,occupation,popular,What is Robby Krieger's occupation?,guitarist,"[""guitarist"", ""guitar player"", ""guitarists""]",musician," musician
+
+",Broader attribute than gold,Broader attribute,Predicts hypernym 'musician' instead of specific instrument role 'guitarist' for Robby Krieger.
+18,dpo,1087089,genre,popular,What genre is Dallas?,soap opera,"[""soap opera"", ""soap"", ""soapie"", ""soapopera""]",Western," Western
+
+",Different occupation or genre,Different attribute,Predicts 'Western' instead of 'soap opera' for Dallas; title ambiguity (1950 Western film vs TV series).
+19,dpo,1250393,producer,medium,Who was the producer of Country?,Jessica Lange,"[""Jessica Lange"", ""Jessica Phyllis Lange""]",Don Rich," Don Rich
+
+",Different named person,Different person,Predicts 'Don Rich' instead of 'Jessica Lange' / 'William D. Wittliff' for Country.
+20,dpo,740702,director,popular,Who was the director of The Great Outdoors?,Howard Deutch,"[""Howard Deutch""]",John McLeod," John McLeod
+
+",Different named person,Different person,Predicts 'John McLeod' instead of 'Howard Deutch' as director of The Great Outdoors.
+21,dpo,5265423,screenwriter,rare,Who was the screenwriter for Ned?,Abe Forsythe,"[""Abe Forsythe""]",John August," John August
+
+",Different named person,Different person,Predicts 'John August' instead of 'Abe Forsythe' as screenwriter for Ned.
+22,dpo,1565610,composer,rare,Who was the composer of Pay Day?,Charlie Chaplin,"[""Charlie Chaplin"", ""Charles Spencer Chaplin"", ""Charles Chaplin"", ""Sir Charles Spencer Chaplin""]",John Powell," John Powell
+
+",Different named person,Different person,Predicts 'John Powell' instead of 'Charlie Chaplin' as composer of Pay Day.
+23,dpo,2861779,author,popular,Who is the author of Lightning?,Dean Koontz,"[""Dean Koontz"", ""Dean Ray Koontz"", ""Aaron Wolfe"", ""Brian Coffey"", ""David Axton"", ""Deanna Dwyer"", ""John Hill"", ""K.R. Dwyer"", ""Leigh Nichols"", ""Anthony North"", ""Owen West"", ""Richard Paige""]",John Green," John Green
+
+",Different named person,Different person,Predicts 'John Green' instead of 'Dean Koontz' as author of Lightning.
+24,dpo,6430975,occupation,popular,What is Teddy Riley's occupation?,record producer,"[""record producer"", ""music producer"", ""singer-songwriter"", ""singer songwriter"", ""singer/songwriter"", ""singersongwriter"", ""singer-songwriter""]",musician," musician
+
+",Broader attribute than gold,Broader attribute,Predicts hypernym 'musician' instead of 'record producer' / 'songwriter' for Teddy Riley.
+25,instruct,1901465,occupation,rare,What is Ivo Perilli's occupation?,screenwriter,"[""screenwriter"", ""scenarist"", ""writer"", ""screen writer"", ""script writer"", ""scriptwriter""]",Lawyer," Lawyer
+
+",Different occupation or genre,Different attribute,Predicts 'Lawyer' instead of 'screenwriter' for Ivo Perilli.
+26,instruct,1437335,genre,medium,What genre is Ayo?,hip hop music,"[""hip hop music"", ""hip-hop music""]",Pop," Pop
+
+",Different occupation or genre,Different attribute,Predicts 'Pop' instead of 'hip hop music' for Ayo.
+27,instruct,1663488,father,medium,Who is the father of Michael VII Doukas?,Konstantinos X Doukas,"[""Konstantinos X Doukas"", ""Constantine X Ducas, Emperor of Constantinople""]",Niketas Choniates," Niketas Choniates
+
+",Different named person,Different person,Predicts chronicler 'Niketas Choniates' instead of father 'Konstantinos X Doukas' for Michael VII Doukas.
+28,instruct,520298,producer,medium,Who was the producer of Even Money?,Danny DeVito,"[""Danny DeVito"", ""Danny de Vito""]",John Singleton," John Singleton
+
+",Different named person,Different person,Predicts 'John Singleton' instead of 'Danny DeVito' as producer of Even Money.
+29,instruct,4583461,capital of,medium,What is Alessandria the capital of?,Marengo,"[""Marengo"", ""Marengo Department"", ""Province of Alessandria"", ""Alessandria"", ""Alessandria Province"", ""provincia di Alessandria""]",Italy," Italy
+
+",Different location or administrative relation,Geographic mismatch,Predicts country 'Italy' instead of historical department/province 'Marengo' / 'Province of Alessandria'.
+30,instruct,4114074,composer,medium,Who was the composer of Five Years?,David Bowie,"[""David Bowie"", ""David Robert Jones"", ""David Jones"", ""Bowie"", ""Davy Jones"", ""Thin White Duke"", ""Halloween Jack""]",Jerome Kern," Jerome Kern
+
+",Different named person,Different person,Predicts 'Jerome Kern' instead of 'David Bowie' as composer of Five Years.
+31,instruct,57908,author,popular,Who is the author of Carousel?,Oscar Hammerstein II,"[""Oscar Hammerstein II"", ""Hammerstien"", ""Oscar Greely Clendenning Hammerstein II"", ""Oscar Hammerstein"", ""Oscar Greeley Clendenning Hammerstein II""]",George Furth," George Furth
+
+",Different named person,Different person,Predicts 'George Furth' instead of 'Oscar Hammerstein II' as author of Carousel.
+32,instruct,71982,occupation,popular,What is Kiko Mizuhara's occupation?,actor,"[""actor"", ""actress"", ""actors"", ""actresses""]",model," model
+
+",Possible alternate occupation,Possible alternate occupation,Predicts 'model' whereas gold record lists 'actor' / 'actress' for Kiko Mizuhara (who is both a model and actress).

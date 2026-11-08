@@ -1,0 +1,86 @@
+condition  subset   outcome    n    k   rate     lo     hi
+     base     all   correct 3003  430 0.1432 0.1311 0.1562
+     base     all incorrect 3003 1832 0.6101 0.5925 0.6274
+     base     all   abstain 3003  741 0.2468 0.2317 0.2625
+     base    rare   correct 1013   70 0.0691 0.0551 0.0864
+     base    rare incorrect 1013  640 0.6318 0.6016 0.6609
+     base    rare   abstain 1013  303 0.2991 0.2717 0.3280
+     base  medium   correct 1002  106 0.1058 0.0882 0.1264
+     base  medium incorrect 1002  628 0.6267 0.5964 0.6562
+     base  medium   abstain 1002  268 0.2675 0.2410 0.2957
+     base popular   correct  988  254 0.2571 0.2308 0.2852
+     base popular incorrect  988  564 0.5709 0.5398 0.6014
+     base popular   abstain  988  170 0.1721 0.1498 0.1969
+      dpo     all   correct 3003  343 0.1142 0.1033 0.1261
+      dpo     all incorrect 3003 1670 0.5561 0.5383 0.5738
+      dpo     all   abstain 3003  990 0.3297 0.3131 0.3467
+      dpo    rare   correct 1013   59 0.0582 0.0454 0.0744
+      dpo    rare incorrect 1013  522 0.5153 0.4845 0.5460
+      dpo    rare   abstain 1013  432 0.4265 0.3963 0.4571
+      dpo  medium   correct 1002   81 0.0808 0.0655 0.0994
+      dpo  medium incorrect 1002  563 0.5619 0.5310 0.5923
+      dpo  medium   abstain 1002  358 0.3573 0.3282 0.3875
+      dpo popular   correct  988  203 0.2055 0.1814 0.2318
+      dpo popular incorrect  988  585 0.5921 0.5612 0.6223
+      dpo popular   abstain  988  200 0.2024 0.1785 0.2286
+ instruct     all   correct 3003  344 0.1146 0.1037 0.1264
+ instruct     all incorrect 3003 1326 0.4416 0.4239 0.4594
+ instruct     all   abstain 3003 1333 0.4439 0.4262 0.4617
+ instruct    rare   correct 1013   63 0.0622 0.0489 0.0788
+ instruct    rare incorrect 1013  387 0.3820 0.3526 0.4123
+ instruct    rare   abstain 1013  563 0.5558 0.5250 0.5861
+ instruct  medium   correct 1002   85 0.0848 0.0691 0.1037
+ instruct  medium incorrect 1002  443 0.4421 0.4116 0.4730
+ instruct  medium   abstain 1002  474 0.4731 0.4423 0.5040
+ instruct popular   correct  988  196 0.1984 0.1747 0.2244
+ instruct popular incorrect  988  496 0.5020 0.4709 0.5331
+ instruct popular   abstain  988  296 0.2996 0.2719 0.3289
+      sft     all   correct 3003  294 0.0979 0.0878 0.1091
+      sft     all incorrect 3003  689 0.2294 0.2147 0.2448
+      sft     all   abstain 3003 2020 0.6727 0.6557 0.6892
+      sft    rare   correct 1013   58 0.0573 0.0446 0.0733
+      sft    rare incorrect 1013  178 0.1757 0.1535 0.2004
+      sft    rare   abstain 1013  777 0.7670 0.7400 0.7920
+      sft  medium   correct 1002   71 0.0709 0.0566 0.0884
+      sft  medium incorrect 1002  227 0.2265 0.2017 0.2535
+      sft  medium   abstain 1002  704 0.7026 0.6736 0.7301
+      sft popular   correct  988  165 0.1670 0.1450 0.1915
+      sft popular incorrect  988  284 0.2874 0.2601 0.3165
+      sft popular   abstain  988  539 0.5455 0.5144 0.5764
+   a        b   outcome subset    n    diff   ci_lo   ci_hi  gained  lost  p_mcnemar  p_holm  ci_within_margin
+base      sft   correct    all 3003 -0.0453 -0.0551 -0.0356      38   174        0.0     0.0             False
+base      sft incorrect    all 3003 -0.3806 -0.4029 -0.3588     168  1311        0.0     0.0             False
+base      sft   abstain    all 3003  0.4259  0.4067  0.4472    1381   102        0.0     0.0             False
+ sft      dpo   correct    all 3003  0.0163  0.0107  0.0223      68    19        0.0     0.0              True
+ sft      dpo incorrect    all 3003  0.3267  0.3092  0.3445    1001    20        0.0     0.0             False
+ sft      dpo   abstain    all 3003 -0.3430 -0.3602 -0.3259       6  1036        0.0     0.0             False
+ dpo instruct   correct    all 3003  0.0003 -0.0043  0.0050      25    24        1.0     1.0              True
+ dpo instruct incorrect    all 3003 -0.1146 -0.1289 -0.1003      83   427        0.0     0.0             False
+ dpo instruct   abstain    all 3003  0.1142  0.1003  0.1277     414    71        0.0     0.0             False
+===============================================================================================
+                                  coef    std err          z      P>|z|      [0.025      0.975]
+-----------------------------------------------------------------------------------------------
+Intercept                      -2.0515      0.187    -11.000      0.000      -2.417      -1.686
+C(condition)[T.dpo]            -0.4132      0.073     -5.669      0.000      -0.556      -0.270
+C(condition)[T.instruct]       -0.3879      0.071     -5.484      0.000      -0.527      -0.249
+C(condition)[T.sft]            -0.6593      0.073     -9.084      0.000      -0.802      -0.517
+C(prop)[T.capital]              1.8054      0.272      6.648      0.000       1.273       2.338
+C(prop)[T.capital of]           0.5538      0.334      1.657      0.098      -0.101       1.209
+C(prop)[T.color]                3.4651      0.933      3.715      0.000       1.637       5.293
+C(prop)[T.composer]            -1.4396      0.387     -3.722      0.000      -2.198      -0.682
+C(prop)[T.country]              3.3216      0.251     13.245      0.000       2.830       3.813
+C(prop)[T.director]            -1.3390      0.276     -4.856      0.000      -1.879      -0.798
+C(prop)[T.father]              -0.7502      0.335     -2.239      0.025      -1.407      -0.093
+C(prop)[T.genre]               -0.6291      0.290     -2.169      0.030      -1.198      -0.061
+C(prop)[T.mother]              -0.9719      0.466     -2.085      0.037      -1.885      -0.058
+C(prop)[T.occupation]          -0.4924      0.414     -1.189      0.234      -1.304       0.319
+C(prop)[T.place of birth]       0.7140      0.382      1.867      0.062      -0.036       1.464
+C(prop)[T.producer]            -2.0992      0.335     -6.269      0.000      -2.755      -1.443
+C(prop)[T.religion]            -1.2464      0.479     -2.600      0.009      -2.186      -0.307
+C(prop)[T.screenwriter]        -1.5537      0.290     -5.348      0.000      -2.123      -0.984
+C(prop)[T.sport]                1.0717      0.307      3.495      0.000       0.471       1.673
+lp                              1.2034      0.081     14.799      0.000       1.044       1.363
+lp:C(condition)[T.dpo]          0.0029      0.065      0.044      0.965      -0.125       0.131
+lp:C(condition)[T.instruct]    -0.0496      0.066     -0.753      0.452      -0.179       0.080
+lp:C(condition)[T.sft]         -0.0575      0.065     -0.879      0.379      -0.186       0.071
+===============================================================================================
