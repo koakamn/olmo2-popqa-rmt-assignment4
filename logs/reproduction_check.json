@@ -1,12 +1,13 @@
 {
   "status": "ALL_CHECKS_PASSED",
   "summary": {
-    "timestamp_utc": "2026-11-08T12:12:24Z",
+    "timestamp_utc": "2026-11-08T12:27:45Z",
     "platform": "Windows-11-10.0.26200-SP0",
     "python_version": "3.13.12",
     "packages": {
       "numpy": "2.5.3",
       "pandas": "3.0.6",
+      "scipy": "1.18.1",
       "matplotlib": "3.11.2"
     },
     "dataset": {
@@ -20,7 +21,7 @@
     "rescored_predictions_verified": 15015,
     "bootstrap_replicates": 10000,
     "seed": 42,
-    "total_replay_seconds": 7.3628,
+    "total_replay_seconds": 7.851,
     "main_results": [
       {
         "condition": "prior_baseline",
@@ -112,27 +113,27 @@
   "runtime_profile": [
     {
       "step": "Hash & integrity verification (13 files)",
-      "seconds": 0.1238
+      "seconds": 0.0245
     },
     {
       "step": "Load data & rescore all 15,015 predictions",
-      "seconds": 0.5642
+      "seconds": 0.9266
     },
     {
       "step": "Subject-cluster bootstrap (B=10000, 2,855 clusters)",
-      "seconds": 1.223
+      "seconds": 1.7025
     },
     {
       "step": "Clustered logistic regression (12,012 observations)",
-      "seconds": 0.1469
+      "seconds": 0.1304
     },
     {
       "step": "Generate Figures 1-3 (matplotlib)",
-      "seconds": 1.4043
+      "seconds": 1.1367
     },
     {
       "step": "Total end-to-end statistical replay",
-      "seconds": 7.3628
+      "seconds": 7.851
     }
   ]
 }

@@ -21,6 +21,7 @@ matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
+import scipy
 from scipy.stats import binomtest, norm
 from scipy.optimize import minimize
 
@@ -576,6 +577,7 @@ def main():
         "packages": {
             "numpy": np.__version__,
             "pandas": pd.__version__,
+            "scipy": scipy.__version__,
             "matplotlib": matplotlib.__version__,
         },
         "dataset": {
